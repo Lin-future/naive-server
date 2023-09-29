@@ -1,8 +1,8 @@
 package api
 
 type SignInReq struct { //Body Params
-	Username string
-	Password string
+	Username string `json:"username"`
+	Password string `json:"password"`
 }
 
 type SignInResp struct {
@@ -19,8 +19,8 @@ type CheckInResp struct {
 }
 
 type SignUpReq struct {
-	Username string
-	Password string
+	Username string `json:"username"`
+	Password string `json:"password"`
 }
 
 type SignUpResp struct {
